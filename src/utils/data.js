@@ -300,6 +300,13 @@ const engines = {
       isExec: true
     }
   },
+  camGirlFinder: {
+    url: {target: 'https://camgirlfinder.net/search?url={imgUrl}'},
+    image: {
+      target: 'https://camgirlfinder.net/search',
+      isExec: true
+    }
+  },
   kagi: {
     url: {
       target: 'https://kagi.com/images',
@@ -394,7 +401,7 @@ const sponsorLogoVariants = {
   lenso: ['dark']
 };
 
-const rasterEngineIcons = ['iqdb', 'tineye', 'whatanime', 'repostSleuth'];
+const rasterEngineIcons = ['iqdb', 'tineye', 'whatanime', 'repostSleuth', 'camGirlFinder'];
 
 // https://github.com/jshttp/mime-db
 const imageMimeTypes = {
@@ -609,6 +616,7 @@ const webpEngineSupport = [
   'lykdat',
   'googleLens',
   'lexica',
+  'camGirlFinder',
   'icons8',
   'lenso',
   'googleImages',
@@ -697,6 +705,7 @@ const maxImageUploadSize = {
   wildberries: {ui: 8 * 1024 * 1024},
   googleLens: {api: 20 * 1024 * 1024},
   lexica: {ui: 30 * 1024 * 1024},
+  camGirlFinder: {ui: 3 * 1024 * 1024},
   kagi: {ui: 1 * 1024 * 1024},
   freepik: {ui: 60 * 1024 * 1024},
   icons8: {ui: 5 * 1024 * 1024},

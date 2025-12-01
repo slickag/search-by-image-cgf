@@ -209,6 +209,11 @@
     "description": "Name of the search engine."
   },
 
+  "engineName_camGirlFinder": {
+    "message": "CamGirlFinder",
+    "description": "Name of the search engine."
+  },
+
   "engineName_kagi": {
     "message": "Kagi",
     "description": "Name of the search engine."
@@ -462,6 +467,11 @@
 
   "menuItemTitle_lexica": {
     "message": "Lexica",
+    "description": "Title of the menu item."
+  },
+
+  "menuItemTitle_camGirlFinder": {
+    "message": "CamGirlFinder",
     "description": "Title of the menu item."
   },
 
@@ -738,6 +748,11 @@
 
   "optionTitle_lexica": {
     "message": "Lexica",
+    "description": "Title of the option."
+  },
+
+  "optionTitle_camGirlFinder": {
+    "message": "CamGirlFinder",
     "description": "Title of the option."
   },
 
