@@ -3,8 +3,8 @@ name: CI
 on:
   workflow_dispatch:
   push:
-    branches-ignore:
-      - main
+    tags:
+      - 'v*'
 
 defaults:
   run:
@@ -70,4 +70,4 @@ jobs:
           body: Learn more about this release from the [changelog](https://github.com/dessant/search-by-image/blob/main/CHANGELOG.md#changelog).
           files: artifacts/*/*
           fail_on_unmatched_files: true
-          draft: true
+          # draft: true
