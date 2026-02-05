@@ -708,7 +708,7 @@ const maxImageUploadSize = {
   googleLens: {api: 20 * 1024 * 1024},
   lexica: {ui: 30 * 1024 * 1024},
   camGirlFinder: {ui: 3 * 1024 * 1024},
-  kagi: {ui: 1 * 1024 * 1024},
+  kagi: {ui: Infinity},
   freepik: {ui: 60 * 1024 * 1024},
   icons8: {ui: 5 * 1024 * 1024},
   lenso: {ui: 10 * 1024 * 1024},
