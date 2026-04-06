@@ -53,12 +53,8 @@ const engines = {
     }
   },
   baidu: {
-    url: {
-      target: 'https://www.baidu.com/',
-      isExec: true
-    },
     image: {
-      target: 'https://www.baidu.com/',
+      target: 'https://graph.baidu.com/pcpage/index?tpl_from=pc',
       isExec: true
     }
   },
@@ -669,7 +665,7 @@ const gifEngineSupport = [
 const maxImageUploadSize = {
   bing: {api: 600 * 1024, ui: 20 * 1024 * 1024},
   yandex: {api: 5 * 1024 * 1024, ui: Infinity},
-  baidu: {api: 2 * 1024 * 1024, ui: 10 * 1024 * 1024},
+  baidu: {ui: Infinity},
   tineye: {ui: 10 * 1024 * 1024},
   sogou: {ui: 10 * 1024 * 1024},
   whatanime: {ui: Infinity},
@@ -688,7 +684,7 @@ const maxImageUploadSize = {
   dreamstime: {ui: Infinity},
   alamy: {ui: 5 * 1024 * 1024},
   '123rf': {api: 5 * 1024 * 1024, ui: 5 * 1024 * 1024},
-  esearch: {ui: 5 * 1024 * 1024},
+  esearch: {ui: 2 * 1024 * 1024},
   tmview: {ui: 2 * 1024 * 1024},
   branddb: {ui: 2 * 1024 * 1024},
   madridMonitor: {ui: 2 * 1024 * 1024},
