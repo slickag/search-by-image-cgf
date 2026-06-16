@@ -18,11 +18,11 @@ jobs:
       contents: read
     steps:
       - name: Clone repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@main
         with:
           persist-credentials: 'false'
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@main
         with:
           node-version-file: '.nvmrc'
           cache: 'npm'
@@ -38,10 +38,11 @@ jobs:
           npm run build:prod:zip:samsung
         env:
           ENABLE_CONTRIBUTIONS: false
+          ENABLE_SPONSORS: false
       - name: Hash artifacts
         run: sha256sum artifacts/*/*
       - name: Upload artifacts
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@main
         if: startsWith(github.ref, 'refs/tags/v')
         with:
           name: artifacts
@@ -58,14 +59,14 @@ jobs:
       contents: write
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@main
         with:
           name: artifacts
           path: artifacts/
       - name: Hash artifacts
         run: sha256sum artifacts/*/*
       - name: Create GitHub release
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@master
         with:
           tag_name: ${{ github.ref_name }}
           name: ${{ github.ref_name }}
